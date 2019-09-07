@@ -14,18 +14,21 @@ namespace CW
             string[] words = text.Split(new char[] { ':', '.', '(', ')', ';' }, StringSplitOptions.RemoveEmptyEntries);
             if (words[0] == "Text")
             {
+                Console.WriteLine("Text files:");
                 TextFile textfile = new TextFile();
                 textfile.Parse(text);
                 textfile.Print();
             }
             else if (words[0] == "Movie")
             {
+                Console.WriteLine("Movies:");
                 VideoFile videoFile = new VideoFile();
                 videoFile.Parse(text);
                 videoFile.Print();
             }
-            else if (words[0] == "Movie")
+            else if (words[0] == "Images")
             {
+                Console.WriteLine("Images:");
                 ImageFile imageFile = new ImageFile();
                 imageFile.Parse(text);
                 imageFile.Print();
