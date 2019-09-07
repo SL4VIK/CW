@@ -26,7 +26,7 @@ namespace CW
                 videoFile.Parse(text);
                 videoFile.Print();
             }
-            else if (words[0] == "Images")
+            else if (words[0] == "Image")
             {
                 Console.WriteLine("Images:");
                 ImageFile imageFile = new ImageFile();
