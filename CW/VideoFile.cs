@@ -14,8 +14,8 @@ namespace CW
         {
             string[] words = text.Split(new char[] { ':', '.', '(', ')', ';' }, StringSplitOptions.RemoveEmptyEntries);
             base.Parse(text);
-            Resolution = words[5];
-            Length = words[6];
+            Resolution = words[4];
+            Length = words[5];
         }
         public void Print()
         {

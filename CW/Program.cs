@@ -10,12 +10,8 @@ namespace CW
     {
         static void Main(string[] args)
         {
-            string text = "Text:data.txt(12B);Another string";
-            //string[] words = text.Split(new char[] { ':', '.', '(', ')', ';' }, StringSplitOptions.RemoveEmptyEntries);
-            //for (int i = 0; i < words.Length; i++)
-            //{
-            //    Console.Write($"{words[i]}|");
-            //}
+            string text = "Movie:logan_2017.mkv(19GB);1920х1080;2h12m";
+            string[] words = text.Split(new char[] { ':', '.', '(', ')', ';' }, StringSplitOptions.RemoveEmptyEntries);
             if (words[0] == "Text")
             {
                 TextFile textfile = new TextFile();
@@ -38,12 +34,6 @@ namespace CW
             {
                 Console.WriteLine("Incorrect type");
             }
-
-
-
-
-
-
             Console.ReadKey();
         }
     }
