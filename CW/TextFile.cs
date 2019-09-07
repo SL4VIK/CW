@@ -13,7 +13,7 @@ namespace CW
         {
             string[] words = text.Split(new char[] { ':', '.', '(', ')', ';' }, StringSplitOptions.RemoveEmptyEntries);
             base.Parse(text);
-            Content = words[4];//Some string content
+            Content = words[4];
         }
         public void Print()
         {
