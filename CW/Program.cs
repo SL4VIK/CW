@@ -10,7 +10,7 @@ namespace CW
     {
         static void Main(string[] args)
         {
-            string text = "Movie:logan_2017.mkv(19GB);1920х1080;2h12m";
+            string text = "Movie:logan_2017.mkv(19GB);1920х1080;2h12m”;";
             string[] words = text.Split(new char[] { ':', '.', '(', ')', ';' }, StringSplitOptions.RemoveEmptyEntries);
             if (words[0] == "Text")
             {

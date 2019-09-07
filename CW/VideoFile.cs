@@ -19,12 +19,11 @@ namespace CW
         }
         public void Print()
         {
-            Console.WriteLine(
-                "\t" + $"{Name}" + "\n\r" +
-                "\t\t" + $"Extention: {Extention}" + "\n\r" +
-                "\t\t" + $"Size: {Size}" + "\n\r" +
-                "\t\t" + $"Resolution: {Resolution}" + "\n\r" +
-                "\t\t" + $"Length: {Length}");
+            Console.WriteLine("\t"+$"{Name}");
+            Console.WriteLine("\t" + "\t" + $"Extention: {Extention}");
+            Console.WriteLine("\t" + "\t" + $"Size: {Size}");
+            Console.WriteLine("\t" + "\t" + $"Resolution: {Resolution}");
+            Console.WriteLine("\t" + "\t" + $"Length: {Length}");
         }
     }
 }
